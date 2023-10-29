@@ -1,4 +1,4 @@
-% 法線から伝達関数を作り、francot-Chellappaアルゴリズムで深度の復元をする
+% 法線から伝達関数を作り、frankot-Chellappaアルゴリズムで深度の復元をする
 % 鏡面反射の場合などの対処はしていません。各自で実装してください
 
 function depths = fcmethod(dx, dy)
