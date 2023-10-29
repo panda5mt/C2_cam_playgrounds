@@ -17,11 +17,12 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
 ## コード
 ここからはすべてTIER IV C2カメラで撮像した映像を前提とする．他の撮像デバイスから取得した映像は，ここにあげたコードでの動作は推奨されない．
 
-なお，下記説明はオフラインのMATLABでの動作を前提としているが，[ブラウザからMATLAB Onlineでも動作確認ができる](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=./main1.m)
+なお，下記説明はオフラインのMATLABでの動作を前提としているが、ブラウザからMATLAB Onlineでも動作確認ができる。Mathworksアカウントを取得済みであれば，即導入できるので是非試していただきたい．
 
-アカウントを取得済みであれば，即導入できるので是非試していただきたい．
+静止画深度推定-> [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main1.m)
 
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main1.m)
+動画深度推定->
+
 
 1. 静止画での深度推定
     - 動作確認
