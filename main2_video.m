@@ -5,13 +5,13 @@
 clc;
 
 % 結果をムービーで記録
-out_mov = true;
+out_mov = false;
 
 % 光源推定バッファ
 pos_buf = ones(20, 3) .* [0.5, 0.5, 0.8];
 
 % C2カメラで録画したデータ(各自用意)
-vid_read = VideoReader('./img/VIDEO-RECORDED-ON-YOUR-C2-CAMERA.mp4');
+vid_read = VideoReader('./img/c2cam_sample.mov');
 
 if out_mov
     vid_write = VideoWriter('./img/encode00','MPEG-4');
