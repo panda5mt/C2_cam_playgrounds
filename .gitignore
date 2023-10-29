@@ -2,3 +2,5 @@
 .MATLABDriveTag
 .DS_Store
 encode00.mp4
+estimate_normal.m
+estimate_lightsource.m
