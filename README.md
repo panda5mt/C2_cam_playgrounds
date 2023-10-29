@@ -48,7 +48,7 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
 
     変換には時間を要するため，結果を動画としてアップしてある．
 
-    ![demo](https://github.com/panda5mt/C2_cam_playgrounds/assets/792481/924420ab-3056-4dd1-a554-4f8657ee2575)
+https://github.com/panda5mt/C2_cam_playgrounds/assets/792481/924420ab-3056-4dd1-a554-4f8657ee2575
 
 
 
