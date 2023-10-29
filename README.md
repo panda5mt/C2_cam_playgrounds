@@ -58,7 +58,7 @@ https://github.com/panda5mt/C2_cam_playgrounds/assets/792481/924420ab-3056-4dd1-
     TODO: 後で真面目に書く
 
 ## 映像を撮影，録画した環境について
-- TIER IV C2カメラ(FoV:85deg)
+- TIER IV C2カメラ
 - レッツノートQV1 (Win11)標準のカメラアプリ．[GMSL2-USB3変換](https://tier4.github.io/camera_docs/usb_convert_jp/)を経由している．
 - SUZUKI Swift Sport ZC33S(ボンネット上15cm) / Swift RS ZC83S(同左)
 
