@@ -2,7 +2,7 @@
 clc;
 
 % 画像読み込み
-RGB_I = (imread('./img/c2snap4.png'));
+RGB_I = (imread('./img/c2snap1.png'));
 
 % グレースケールに変換
 if size(RGB_I,3) == 3
