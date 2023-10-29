@@ -2,7 +2,7 @@
 clc;
 
 % 画像読み込み
-RGB_I = (imread('./img/c2snap1.png'));
+RGB_I = (imread('./img/c2snap4.png'));
 
 % グレースケールに変換
 if size(RGB_I,3) == 3
@@ -50,7 +50,7 @@ nexttile
 imshow(RGB_I);
 
 nexttile
-clims = [-100 200];
+clims = [-110 85];
 imagesc(Z,clims); colormap("jet"); colorbar; title('depth estimate');
 
 drawnow
