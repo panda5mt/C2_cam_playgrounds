@@ -1,5 +1,5 @@
 # C2_camera_playgrounds
-## 光源と法線推定を用いたFrancot-Chellappaアルゴリズムによる深度推定  
+## Shape from Shadings(SfS)手法 $\cdot$ Francot-Chellappaアルゴリズムによる深度推定  
 TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つカメラであることが確認できた．ここにテスト用コードとともに，良好な特性結果をここに簡易にまとめた．
 
 処理能力やメモリといったリソースが比較的少ないデバイスでのコンピュータビジョンにも利用できそうである．
@@ -56,7 +56,7 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
 ## 映像を撮影，録画した環境について
 - TIER IV C1カメラ(FoV:85deg)
 - レッツノートQV1 (Win11)標準のカメラアプリ．[GMSL2-USB3変換](https://tier4.github.io/camera_docs/usb_convert_jp/)を経由している．
-- SUZUKI Swift Sport ZC33S(屋根上15cm) / Swift RS ZC83S(車内フロントガラス貼り付け)
+- SUZUKI Swift Sport ZC33S(ボンネット上15cm) / Swift RS ZC83S(同左)
 
 ## 技術的背景
 ### まず必要なのは光源座標と法線マップ
@@ -81,13 +81,16 @@ $i=\rho n\cdot s$
 
 - 伝達関数を適用
 
-    勾配情報を持つフーリエ領域のデータに，周波数応答（伝達関数）を適用．この伝達関数は，勾配情報を統合して連続的な深度マップを生成するためのものである．
+    勾配情報を持つフーリエ領域のデータに，周波数応答(伝達関数)を適用．この伝達関数は，勾配情報を統合して連続的な深度マップを生成するためのものである．
 
 - フーリエ逆変換
 
     前のステップで得られたフーリエ領域のデータを逆変換し，画像領域の深度マップを取得．
 
 ## 結論 
-チューニングされたThin lens modelに従う複合レンズと，HDRイメージセンサを搭載したC1カメラを簡易評価した．優れた光学的特性，そしてイメージセンサのダイナミックレンジにより，単純なロジックでも深度推定が可能であることを示した．
+チューニングされたThin lens modelに従う複合レンズと，HDRイメージセンサを搭載したC2カメラを簡易評価した．優れた光学的特性，そしてイメージセンサのダイナミックレンジにより，単純なロジックでも深度推定が可能であることを示した．
 
 ADASも含め，ロボティクス方面でカメラを利用したり，工場内移動ロボット(群ロボ)などコンピュータリソースが潤沢にない環境で画像処理をする分野で威力を発揮するものと思われる．
+
+## 参考文献
+- Robert T.Frankot, <i>et al.</i> [Method for Enforcing Integrability in Shape from Shading Algorithms](https://www.researchgate.net/publication/3191576_A_Method_for_Enforcing_Integrability_in_Shape_from_Shading_Algorithms/link/55a7a2d908ae345d61db624c/download)
