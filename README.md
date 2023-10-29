@@ -1,6 +1,6 @@
 # C2_camera_playgrounds
 ## Francot-Chellappaアルゴリズムによる深度推定  
-TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つカメラであることが確認できた．今回はShape from Shadings(SfS)手法を用いた。ここにテスト用コードとともに，良好な特性結果をここに簡易にまとめた．
+TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つカメラであることが確認できた．今回はShape from Shadings(SfS)手法を用いた．ここにテスト用コードとともに，良好な特性結果をここに簡易にまとめた．
 
 処理能力やメモリといったリソースが比較的少ないデバイスでのコンピュータビジョンにも利用できそうである．
 
@@ -17,7 +17,7 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
 ## コード
 ここからはすべてこの実験で使用したTIER IV C2カメラで撮像した映像を前提とする．他の撮像デバイスや環境で取得した映像は，ここにあげたコードでの動作は推奨されない．
 
-なお，下記説明はオフラインのMATLABでの動作を前提としているが、ブラウザからMATLAB Onlineでも動作確認ができる。Mathworksアカウントを取得済みであれば，即導入できるので是非試していただきたい．
+なお，下記説明はオフラインのMATLABでの動作を前提としているが，ブラウザからMATLAB Onlineでも動作確認ができる．Mathworksアカウントを取得済みであれば，即導入できるので是非試していただきたい．
 
 - 静止画深度推定: [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main1.m)
 
