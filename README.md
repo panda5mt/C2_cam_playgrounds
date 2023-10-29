@@ -47,7 +47,10 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
     [main2_video.m](./main2_video.m)をMATLAB/MATLAB onlineで実行する．
 
     変換には時間を要するため，結果をYoutubeにアップしてある．
-    [!['C2カメラによるSfSを用いた深度推定'](./img/thumbnail1.png)](https://youtu.be/T1Im4zE3g7E)
+   
+
+    [!['C2カメラによるSfSを用いた深度推定'](https://github.com/panda5mt/C2_cam_playgrounds/assets/792481/924420ab-3056-4dd1-a554-4f8657ee2575)
+
 
 
 
