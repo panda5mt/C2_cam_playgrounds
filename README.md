@@ -19,22 +19,23 @@ TIER IV C2カメラはC1に引き続き，光学的に良好な特性を持つ�
 
 なお，下記説明はオフラインのMATLABでの動作を前提としているが、ブラウザからMATLAB Onlineでも動作確認ができる。Mathworksアカウントを取得済みであれば，即導入できるので是非試していただきたい．
 
-静止画深度推定-> [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main1.m)
+- 静止画深度推定: [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main1.m)
 
-動画深度推定->
+- 動画の深度推定:
+    [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=panda5mt/C2_cam_playgrounds&file=main2_video.m)
 
 
 1. 静止画での深度推定
     - 動作確認
 
         元の画像は以下のものを使用する．
-    ![](img/c2snap2.png)
+    ![](img/c2snap4.png)
 
         [main1.m](./main1.m)をMATLAB/MATLAB onlineで実行する．
 
 
         下記Figureが出現する．
-    ![](img/depth_map.png)
+    ![](img/thumbnail1.png)
         カラーマップは赤色になるほどカメラに近く，水色ほど遠ざかる．そこまで間違った深度推定はしていないものの，<u>勾配計算した際の定数項分と思われるノイズが道路上すぐ手前に存在しており，「見やすい」マップではない</u>といえる．こういったノイズは別の手法でも良く確認される物なので，別途台形補正などで道路検出を行い，物体とノイズの判別をした方がよいと思われる．
 
     - パラメータ調整
@@ -91,7 +92,7 @@ $i=\rho n\cdot s$
     前のステップで得られたフーリエ領域のデータを逆変換し，画像領域の深度マップを取得．
 
 ## 結論 
-チューニングされたThin lens modelに従う複合レンズと，HDRイメージセンサを搭載したC2カメラを簡易評価した．優れた光学的特性，そしてイメージセンサのダイナミックレンジにより，単純なロジックでも深度推定が可能であることを示した．
+明度バランスが絶妙に調整されていて，HDRイメージセンサを搭載したC2カメラを簡易評価した．優れた光学的特性，そしてイメージセンサのダイナミックレンジにより，単純なロジックでも深度推定が可能であることを示した．
 
 ADASも含め，ロボティクス方面でカメラを利用したり，工場内移動ロボット(群ロボ)などコンピュータリソースが潤沢にない環境で画像処理をする分野で威力を発揮するものと思われる．
 
