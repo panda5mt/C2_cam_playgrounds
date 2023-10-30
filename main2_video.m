@@ -65,7 +65,7 @@ while hasFrame(vid_read)
     imshow(RGB_I);
 
     nexttile
-    clims = [-200 200];
+    clims = [-100 100];
     imagesc(Z, clims); colormap("jet"); colorbar; title('depth estimate');
 
     drawnow
