@@ -1,6 +1,6 @@
 *.asv
 .MATLABDriveTag
 .DS_Store
-encode00.mp4
+encode00.*
 estimate_normal.m
 estimate_lightsource.m
