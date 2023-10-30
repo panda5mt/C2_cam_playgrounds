@@ -5,10 +5,10 @@
 clc;
 
 % 結果をムービーで記録(trueで記録)
-out_mov = false;
+out_mov = true;
 
 % 光源推定バッファ
-pos_buf = ones(20, 3) .* [0.5, 0.5, 0.8];
+pos_buf = ones(20, 3) .* [0.5, 0.5, -0.8];
 
 % C2カメラで録画したデータ(各自用意)
 vid_read = VideoReader('./img/c2cam_sample.mov');
@@ -23,7 +23,6 @@ while hasFrame(vid_read)
 
     % グレースケールに変換
     RGB_I = readFrame(vid_read);
-    %I = imresize(RGBI, [960*2 1280*2]);
     I = im2double(im2gray(RGB_I)); 
    
    
@@ -66,8 +65,8 @@ while hasFrame(vid_read)
     imshow(RGB_I);
 
     nexttile
-    clims = [-100 200];
-    imagesc(Z,clims); colormap("jet"); colorbar; title('depth estimate');
+    clims = [-200 200];
+    imagesc(Z, clims); colormap("jet"); colorbar; title('depth estimate');
 
     drawnow
 

@@ -32,7 +32,6 @@ tic
 % 試験的に固定値(例:pos = [0.5, 0.5, -0.7];)で試すことも可能です
 pos = estimate_lightsource(I);
 
-
 % 法線推定(ロジック非公開)
 % こちらも光源推定の結果に大きく依存します
 % 各自で実装してください
@@ -50,7 +49,7 @@ nexttile
 imshow(RGB_I);
 
 nexttile
-clims = [-110 95];
+clims = [-200 120];
 imagesc(Z,clims); colormap("jet"); colorbar; title('depth estimate');
 
 drawnow
