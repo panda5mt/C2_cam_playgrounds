@@ -50,7 +50,7 @@ nexttile
 imshow(RGB_I);
 
 nexttile
-clims = [-110 85];
+clims = [-110 95];
 imagesc(Z,clims); colormap("jet"); colorbar; title('depth estimate');
 
 drawnow
