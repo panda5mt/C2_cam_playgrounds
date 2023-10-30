@@ -5,7 +5,7 @@
 clc;
 
 % 結果をムービーで記録(trueで記録)
-out_mov = true;
+out_mov = false;
 
 % 光源推定バッファ
 pos_buf = ones(20, 3) .* [0.5, 0.5, -0.8];
