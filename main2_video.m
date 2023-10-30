@@ -8,13 +8,13 @@ clc;
 out_mov = false;
 
 % 光源推定バッファ
-pos_buf = ones(20, 3) .* [0.5, 0.5, -0.8];
+pos_buf = ones(10, 3) .* [0.5, 0.5, -0.8];
 
 % C2カメラで録画したデータ(各自用意)
 vid_read = VideoReader('./img/c2cam_sample.mov');
 
 if out_mov
-    vid_write = VideoWriter('./img/encode00','Motion JPEG AVI');
+    vid_write = VideoWriter('./img/encode00','MPEG-4');
     vid_write.FrameRate = 10;
     open(vid_write);
 end
@@ -54,8 +54,8 @@ while hasFrame(vid_read)
     [p, q] = estimate_normal(I, pos);
     pos_buf = circshift(pos_buf,[1 0]); % pos_bufを下にシフト
 
-    % 推定された法線から深度推定(公開)
-    Z = fcmethod(p, q);
+    % 推定された法線から深度推定(ロジック公開)
+    Z = fcmethod(p, q, false); % false:通常解像度, true:高解像度
 
 
     % 結果表示
@@ -65,7 +65,7 @@ while hasFrame(vid_read)
     imshow(RGB_I);
 
     nexttile
-    clims = [-100 100];
+    clims = [-100 200];
     imagesc(Z, clims); colormap("jet"); colorbar; title('depth estimate');
 
     drawnow
