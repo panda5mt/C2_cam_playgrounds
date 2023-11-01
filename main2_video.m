@@ -14,7 +14,7 @@ pos_buf = ones(10, 3) .* [0.5, 0.5, -0.8];
 vid_read = VideoReader('./img/c2cam_sample.mov');
 
 if out_mov
-    vid_write = VideoWriter('./img/encode00','MPEG-4');
+    vid_write = VideoWriter('./img/encode00','Motion JPEG AVI');
     vid_write.FrameRate = 10;
     open(vid_write);
 end
