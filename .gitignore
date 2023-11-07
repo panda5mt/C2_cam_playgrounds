@@ -2,5 +2,5 @@
 .MATLABDriveTag
 .DS_Store
 encode00.*
-estimate_normal.m
+# estimate_normal.m
 estimate_lightsource.m
