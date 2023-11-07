@@ -42,6 +42,7 @@ function depths = fcmethod(dx, dy, high_res)
     % 伝達関数による深度の再構築
     Z = (1i * u .* FDX + 1i * v .* FDY) ./ denom;
     
+    % 下記3行のコードは光源推定ロジックに依存します。場合によってはコメントアウトしてください
     if(high_res)
         Z = -Z;
     end
